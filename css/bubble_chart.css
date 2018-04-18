@@ -1,0 +1,152 @@
+@font-face {
+  font-family: ProximaNovaExCnMedium;
+
+  src: url(../../../../assets/fonts/ProximaNovaExCn-MediumWeb.eot);
+}
+@font-face {
+  font-family: ProximaNovaExCnMedium;
+
+  src: url(../../../../assets/fonts/ProximaNovaExCn-MediumWeb.woff) format('woff');
+}
+@font-face {
+  font-family: ProximaNovaExCnBold;
+
+  src: url(../../../../assets/fonts/ProximaNovaExCn-BoldWeb.eot);
+}
+@font-face {
+  font-family: ProximaNovaExCnBold;
+
+  src: url(../../../../assets/fonts/ProximaNovaExCn-BoldWeb.woff) format('woff');
+}
+
+body {
+  font-family: 'ProximaNovaExCnMedium', sans-serif !important;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  width: 938px;
+  height: 600px;
+  background-color: #2D3539;
+}
+
+.label {
+  font-size: 16px;
+  fill: #fff;
+  text-shadow: 1px 1px 1px black, -1px -1px -1px black;
+  font-family: ProximaNovaExCnMedium, sans-serif !important;
+  cursor: default;
+}
+
+circle {
+  cursor: pointer;
+}
+
+.axis line {
+  stroke: white;
+}
+
+.axis path {
+  stroke: white;
+}
+
+.axis text {
+  fill: white;
+  font-size: 14px;
+  font-family: ProximaNovaExCnMedium, sans-serif !important;
+}
+
+text.axis-label  {
+  font-size: 16px;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 2px;
+  pointer-events: none;
+  max-width: 180px;
+  background-color: #d8d8d8;
+  color: #2d3539;
+}
+
+.c-tooltip__row {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  min-height: 20px;
+}
+
+.c-tooltip__row p {
+  margin: 0;
+  flex: 0 1 150px;
+}
+
+.c-tooltip__image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c-tooltip__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.c-button-row {
+  text-align: center;
+}
+
+.c-button-row + .c-button-row {
+  margin-top: 5px;
+}
+
+.c-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'ProximaNovaExCnMedium', sans-serif !important;
+}
+
+.c-button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.c-button.active {
+  background-color: #ff003c;
+  color: white;
+}
+
+.grid .domain {
+  stroke: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  bottom: 10px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.overlay .gridline {
+  position: absolute;
+  width: 1px;
+  border-left: 1px white dashed;
+  height: calc(100% - 80px);
+  top: 50px;
+}

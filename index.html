@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bubble Chart - vieux mâles blancs</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="./css/bubble_chart.css">
+</head>
+
+<body style="overflow: hidden;">
+  <div class="container">
+    <form id="button-bar">
+      <div class="c-button-row">
+        <button 
+        class="c-button" 
+        type="button" 
+        v-for="color in colors" 
+        v-bind:class="{ active: color && color.value === activeColor.value }" 
+        @click="updateColor(color)">
+          {{ color.label }}
+        </button>
+      </div>
+      <div class="c-button-row">
+        <button 
+        class="c-button" 
+        type="button" 
+        v-for="layout in layouts" 
+        v-bind:class="{ active: layout && layout.value === activeLayout.value }" 
+        @click="updateLayout(layout)">
+        {{ layout.label }}
+      </button>
+    </div>
+    </form>
+
+    <div id="container"></div>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.22.0/d3-legend.min.js"></script>
+  <script src="https://unpkg.com/vue@2.3.3/dist/vue.min.js"></script>
+  
+  <script src="src/bubble_chart.js"></script>
+</body>
+</html>
